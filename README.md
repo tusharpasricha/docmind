@@ -285,20 +285,6 @@ DocMind uses the OpenAI Node.js SDK directly for embeddings and chat completions
 
 ---
 
-## Documentation
-
-- [System Architecture](docs/ARCHITECTURE.md) — full pipeline diagrams, data models, and technology decision log
-- [Interview Preparation Guide](docs/INTERVIEW_PREP.md) — 20 technical Q&As, system design scenarios, and concept explanations
-- [Interactive Flow Diagram](docs/flow-diagram.html) — visual pipeline diagram with animations and concept cards
-
----
-
-## Screenshots
-
-> Upload the UI screenshot here — e.g. `docs/screenshots/ui-overview.png`
-
----
-
 ## Project Structure
 
 ```
@@ -314,17 +300,13 @@ docmind/
 │   │   ├── embedder.js        # OpenAI embeddings with batch/rate handling
 │   │   └── vectorStore.js     # ChromaDB CRUD and similarity search
 │   └── uploads/               # Temporary PDF storage (auto-cleaned)
-├── frontend/
-│   ├── app/
-│   │   └── page.jsx           # Main layout: sidebar + chat area
-│   └── components/
-│       ├── FileUpload.jsx      # Drag-drop upload with step progress
-│       ├── ChatInterface.jsx   # Message thread with typing indicator
-│       └── SourceCard.jsx      # Expandable source citation card
-└── docs/
-    ├── ARCHITECTURE.md         # System design documentation
-    ├── INTERVIEW_PREP.md       # Interview Q&A guide
-    └── flow-diagram.html       # Interactive pipeline visualisation
+└── frontend/
+    ├── app/
+    │   └── page.jsx           # Main layout: sidebar + chat area
+    └── components/
+        ├── FileUpload.jsx      # Drag-drop upload with step progress
+        ├── ChatInterface.jsx   # Message thread with typing indicator
+        └── SourceCard.jsx      # Expandable source citation card
 ```
 
 ---
